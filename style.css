@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #96cfd6;
+}
+
+.center {
+  background-color: #96cfd6;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.ring-one {
+  transform: rotate(-45deg);
+  display: inline-block;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.ring-two {
+  transform: rotate(45deg);
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 360px;
+  position: absolute;
+}
+
+.top {
+  width: 40px;
+  height: 40px;
+  background-color: #01408f;
+}
+
+.bottom {
+  width: 20px;
+  height: 40px;
+  background-color: tomato;
+  margin-left: 10px;
+}
+
+.circle-one {
+  width: 400px;
+  height: 400px;
+  background-color: #01408f;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle-two {
+  width: 350px;
+  height: 350px;
+  background-color: #f9f0c7;
+  border-radius: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.minute {
+  width: 400px;
+  height: 20px;
+  position: absolute;
+  left: -25px;
+  top: 165px;
+  animation-name: rotate;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.47, 0.46, 0.47, 0.46);
+}
+
+.min-one,
+.min-two {
+  width: 200px;
+  height: 20px;
+  float: left;
+  display: inline-block;
+}
+
+.min-one {
+  background-color: transparent;
+}
+
+.min-two {
+  background-color: #01408f;
+}
+
+.second {
+  width: 400px;
+  height: 10px;
+  position: absolute;
+  left: -25px;
+  top: 170px;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.47, 0.46, 0.47, 0.46);
+}
+
+.sec-one,
+.sec-two {
+  width: 200px;
+  height: 10px;
+  float: left;
+  display: inline-block;
+}
+
+.sec-one {
+  background-color: transparent;
+}
+
+.sec-two {
+  background-color: #01408f;
+}
+
+.hour {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  left: -25px;
+  top: 160px;
+  animation-name: rotate;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.47, 0.46, 0.47, 0.46);
+}
+
+.hr-one,
+.hr-two {
+  width: 200px;
+  height: 30px;
+  float: left;
+  display: inline-block;
+}
+
+.hr-one {
+  background-color: transparent;
+}
+
+.hr-two {
+  background-color: #01408f;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.point {
+  width: 60px;
+  height: 60px;
+  background-color: #01408f;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
